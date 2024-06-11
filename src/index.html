@@ -32,32 +32,68 @@
   <!-- Main Content -->
 
   <main>
-    <div class="blurb1">
-      <h1>Benjamin R. Woodard</h1>
-      <div class="about-me-blurb" id="about-me-blurb">
-        <p>
-          Welcome, I'm Ben, thanks for stopping by! I am A Full-Stack Software Developer based out of
-          Williamsburg, Virginia. Here you can find my recent projects, links
-          to my personal profiles and a direct contact form. My
-          passions include exercise, hot yoga, skiing hiking and anything
-          outdoors. I would love to hear from you!
-        </p>
+    <section>
+      <div class="blurb1">
+        <h1>Benjamin R. Woodard</h1>
+        <div class="about-me-blurb" id="about-me-blurb">
+          <p>
+            Welcome, I'm Ben, thanks for stopping by! I am A Full-Stack Software Developer based out of
+            Williamsburg, Virginia. Here you can find my recent projects, links
+            to my personal profiles and a direct contact form. My
+            passions include exercise, hot yoga, skiing hiking and anything
+            outdoors. I would love to hear from you!
+          </p>
+        </div>
+        <div class="github-intro" id="github-intro"></div>
+        <div class="resume-link-container" id="resume-link-container">
+          <button id="contact-modal-open">Contact</button>
+          <a href="../resources/resume/ben_woodard_06_24.pdf" download="Ben Woodard Resume" id="resume-link">Resume</a>
+        </div>
       </div>
-      <div class="github-intro" id="github-intro"></div>
-      <div class="resume-link-container" id="resume-link-container">
-        <button id="contact-modal-open">Contact</button>
-        <a href="../resources/resume/ben_woodard_06_24.pdf" download="Ben Woodard Resume" id="resume-link">Resume</a>
-      </div>
-    </div>
+      <div id="github-img"></div>
+    </section>
 
-    <div id="github-img"></div>
+    <!-- Projects Section -->
+    <section id="recent-projects">
+      <h2 id="projects-header">Recent Projects</h2>
+      <div id="projects-section">
+        <div class="project-container">
+          <img class="project-image" src="../resources/images/twitter_api.png"/>
+          <div class="project-info">
+            <h3>Twitter API Clone</h3>
+            <p>A Spring Boot API built to mock Twitter server CRUD operations.  Built using SpringBoot, Java, Spring JPA, Hibernate, postgreSQL</p>
+          </div>
+        </div>
+        <div class="project-split">
+        </div>
+        <div class="project-container">
+          <img class="project-image" src="../resources/images/brewDay.png"/>
+          <div class="project-info">
+            <h3>BrewDay - Brewing Software</h3>
+            <p>An inventory and task management software for craft beverage production.  Built with Spring Boot, Java,
+              Thymeleaf, Spring JPA, Hibernate, mySQL
+            </p>
+          </div>
+        </div>
+        <div class="project-split">
+        </div>
+        <div class="project-container">
+          <img class="project-image" src="../resources/images/twitter_api.png"/>
+          <div class="project-info">
+            <h3>Twitter API Clone</h3>
+            <p>A Twitter server API clone built with SpringBoot, Spring JPA, Hibernate, postgreSQL</p>
+          </div>
+        </div>
+        
+      </div>
+    </section>
 
     <!-- Contact Form Modal Container -->
 
     <div class="contact-modal-container" id="contact-modal-container">
       <div class="contact-modal">
         <h2>Contact Me</h2>
-        <form method="post" action="mailto:benjaminwoodard93@gmail.com" enctype="text/plain">
+        <form action="https://formsubmit.co/benjaminwoodard93@gmail.com" method="POST">
           <div class="contact-element">
             <label>Name:</label>
             <input type="text" id="name" name="name" placeholder="Your name.." required>
@@ -66,7 +102,7 @@
             <label>Email</label>
             <input type="email" id="email" name="email" placeholder="Your email.." required>
           </div>
-          <div >
+          <div>
             <label>Subject</label>
             <input type="text" id="subject" name="subject" placeholder="Subject.." required>
           </div>
