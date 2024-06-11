@@ -41,7 +41,7 @@ h2{
 .navbar li:hover{
   border: solid 1px rgba(255, 131, 0, 1);
   background-color: rgba(255, 131, 0, 1);
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   cursor: pointer;
 }
 
@@ -64,8 +64,8 @@ h2{
 .blurb1{
 display: flex;
 flex-wrap: wrap;
-margin-left: 13rem;
-margin-top: 9.5rem;
+margin-left: 20rem;
+margin-top: 12rem;
 width: 40%;
 word-spacing: .5rem;
 letter-spacing: .2rem;
@@ -77,13 +77,36 @@ z-index: 2;
  color: rgba(255, 131, 0, 1)
 }
 
-#resume-link-container{
+.about-me-blurb {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: opacity 2s, height 2s;
+}
+
+.about-me-blurb.show{
+  display: block;
+  opacity: 1;
+  height: auto;
+  word-spacing: .2;
+}
+
+.resume-link-container{
   width: 70%;
-  margin-top: 5rem;
+  margin-top: 10rem;
   margin-left: 5rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.resume-link-container.adjust{
+  width: 70%;
+  margin-top: 4.35rem;
+  margin-left: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 #contact-modal-open{
@@ -122,7 +145,47 @@ z-index: 2;
 
 #github-img{
   width: 80%;
-  position: absolute; top: 5rem; left: 60%;
-  z-index: 1;
+  position: absolute; top: 9rem; left: 65%;
+}
+
+#github-intro.none{
+  display: none;
+}
+
+/* Contact Modal Container */
+
+.contact-modal-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  opacity:0;
+  pointer-events: none;
+  top: 0;
+  bottom: 0;
+  transition: opacity 0.3s ease;
+}
+
+.contact-modal-container.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.contact-modal {
+  background-color: red;
+  width: 100%;
+  border-radius: 5px;
+  padding: 30px 50px;
+  width:600px;
+  max-width: 100%;
+  text-align: center;
+  
+}
+
+.contact-element{
+  height: 5rem;
+  width: 80%;
 }
 

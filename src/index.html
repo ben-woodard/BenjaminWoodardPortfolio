@@ -1,47 +1,86 @@
 <!DOCTYPE html>
 <html>
-<title>
-  Benjamin R. Woodard
-</title>
+<title>Benjamin R. Woodard</title>
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../css/index.css" type="text/css">
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap" rel="stylesheet">
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../css/index.css" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-
   <!--header with nav bar  -->
 
   <header class="header">
     <nav class="navbar">
       <ul>
-        <li>About Me</li>
-        <li><a href="https://github.com/ben-woodard" class="nav-link">Github</a></li>
-        <li><a href="https://www.linkedin.com/in/benjamin-woodard" class="nav-link">Linkedin</a></li>
+        <li id="about-me-button">About Me</li>
+        <li>
+          <a href="https://github.com/ben-woodard" class="nav-link">Github</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/benjamin-woodard" class="nav-link">Linkedin</a>
+        </li>
       </ul>
     </nav>
   </header>
 
-  <main>
-   
-      <div class="blurb1">
-        <h1>Benjamin R. Woodard</h1>
-        <div id="github-intro">
-        </div>
-        <div id="resume-link-container">
-          <button id="contact-modal-open">Contact</button>
-          <a href="../resources/resume/ben_woodard_06_24.pdf" download="Ben Woodard Resume" id="resume-link">Resume</a>
-        </div>
-        
-      </div>
+  <!-- Main Content -->
 
-    <div id="github-img">
+  <main>
+    <div class="blurb1">
+      <h1>Benjamin R. Woodard</h1>
+      <div class="about-me-blurb" id="about-me-blurb">
+        <p>
+          Welcome, I'm Ben, thanks for stopping by! I am A Full-Stack Software Developer based out of
+          Williamsburg, Virginia. Here you can find my recent projects, links
+          to my personal profiles and a direct contact form. My
+          passions include exercise, hot yoga, skiing hiking and anything
+          outdoors. I would love to hear from you!
+        </p>
+      </div>
+      <div class="github-intro" id="github-intro"></div>
+      <div class="resume-link-container" id="resume-link-container">
+        <button id="contact-modal-open">Contact</button>
+        <a href="../resources/resume/ben_woodard_06_24.pdf" download="Ben Woodard Resume" id="resume-link">Resume</a>
+      </div>
+    </div>
+
+    <div id="github-img"></div>
+
+    <!-- Contact Form Modal Container -->
+
+    <div class="contact-modal-container" id="contact-modal-container">
+      <div class="contact-modal">
+        <h2>Contact Me</h2>
+        <form method="post" action="mailto:benjaminwoodard93@gmail.com" enctype="text/plain">
+          <div class="contact-element">
+            <label>Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your name.." required>
+          </div>
+          <div class="contact-element">
+            <label>Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email.." required>
+          </div>
+          <div >
+            <label>Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject.." required>
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Type your message here..." style="height:200px"
+              required></textarea>
+          </div>
+          <div>
+            <input id="contact-modal-send" type="submit" value="Submit">
+          </div>
+        </form>
+        <button id="contact-modal-close">Cancel</button>
+      </div>
     </div>
 
   </main>
