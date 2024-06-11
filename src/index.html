@@ -58,19 +58,23 @@
       <h2 id="projects-header">Recent Projects</h2>
       <div id="projects-section">
         <div class="project-container">
-          <img class="project-image" src="../resources/images/twitter_api.png"/>
+          <img class="project-image" src="../resources/images/twitter_api.png" />
           <div class="project-info">
-            <h3><a class="project-link" href="https://github.com/ben-woodard/twitter-clone-springAPI">Twitter API Clone</a></h3>
-            <p>A Spring Boot API built to mock Twitter server CRUD operations.  Built using SpringBoot, Java, Spring JPA, Hibernate, postgreSQL</p>
+            <h3><a class="project-link" href="https://github.com/ben-woodard/twitter-clone-springAPI">Twitter API
+                Clone</a></h3>
+            <p>A Spring Boot API built to mock Twitter server CRUD operations. Built using SpringBoot, Java, Spring JPA,
+              Hibernate, postgreSQL</p>
           </div>
         </div>
         <div class="project-split">
         </div>
         <div class="project-container">
-          <img class="project-image" src="../resources/images/brewDay.png"/>
+          <img class="project-image" src="../resources/images/brewDay.png" />
           <div class="project-info">
-            <h3><a class="project-link" href="https://github.com/ben-woodard/brewDayApp">BrewDay - Brewing Software</a></h3>
-            <p>An inventory and task management software for craft beverage production.  Built with Spring Boot, Java, JavaScript
+            <h3><a class="project-link" href="https://github.com/ben-woodard/brewDayApp">BrewDay - Brewing Software</a>
+            </h3>
+            <p>An inventory and task management software for craft beverage production. Built with Spring Boot, Java,
+              JavaScript
               Thymeleaf, Spring JPA, Hibernate, mySQL
             </p>
           </div>
@@ -78,10 +82,12 @@
         <div class="project-split">
         </div>
         <div class="project-container">
-          <img class="project-image" src="../resources/images/chatApp.png"/>
+          <img class="project-image" src="../resources/images/chatApp.png" />
           <div class="project-info">
-            <h3><a class="project-link" href="https://github.com/ben-woodard/chatApplicationPolling">Chat Application - Slack Clone</a></h3>
-            <p>A Slack clone where users join channels and send messages, updated through JavaScript polling technique.  Built with Spring Boot,
+            <h3><a class="project-link" href="https://github.com/ben-woodard/chatApplicationPolling">Chat Application -
+                Slack Clone</a></h3>
+            <p>A Slack clone where users join channels and send messages, updated through JavaScript polling technique.
+              Built with Spring Boot,
               Java, Thymeleaf, JavaScript, Hibernate, mySQL
             </p>
           </div>
@@ -89,23 +95,26 @@
         <div class="project-split">
         </div>
         <div class="project-container">
-          <img class="project-image" src="../resources/images/credVal.png"/>
+          <img class="project-image" src="../resources/images/credVal.png" />
           <div class="project-info">
-            <h3><a class="project-link" href="https://github.com/ben-woodard/creditCardValidation">Credit Card Validation</a></h3>
+            <h3><a class="project-link" href="https://github.com/ben-woodard/creditCardValidation">Credit Card
+                Validation</a></h3>
             <p>A JavaScript functional program used to intake and analyze validity of credit card numbers</p>
           </div>
         </div>
         <div class="project-split">
         </div>
         <div class="project-container">
-          <img class="project-image" src="../resources/images/jobTracking.png"/>
+          <img class="project-image" src="../resources/images/jobTracking.png" />
           <div class="project-info">
-            <h3><a class="project-link" href="https://github.com/jeffpodmayer/JobTrackingApp">Job Application Tracking</a></h3>
-            <p>A software designed to track job applications for a user by company and date. Built with Spring Boot, Java,
+            <h3><a class="project-link" href="https://github.com/jeffpodmayer/JobTrackingApp">Job Application
+                Tracking</a></h3>
+            <p>A software designed to track job applications for a user by company and date. Built with Spring Boot,
+              Java,
               Thymeleaf, Spring JPA, Hibernate, mySQL</p>
           </div>
         </div>
-        
+
       </div>
     </section>
 
@@ -113,33 +122,35 @@
 
     <div class="contact-modal-container" id="contact-modal-container">
       <div class="contact-modal">
-        <h2>Contact Me</h2>
-        <form action="https://formsubmit.co/benjaminwoodard93@gmail.com" method="POST">
-          <div class="contact-element">
-            <label>Name:</label>
-            <input type="text" id="name" name="name" placeholder="Your name.." required>
-          </div>
-          <div class="contact-element">
-            <label>Email</label>
-            <input type="email" id="email" name="email" placeholder="Your email.." required>
-          </div>
-          <div>
-            <label>Subject</label>
-            <input type="text" id="subject" name="subject" placeholder="Subject.." required>
-          </div>
-          <div>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Type your message here..." style="height:200px"
-              required></textarea>
-          </div>
-          <div>
-            <input id="contact-modal-send" type="submit" value="Submit">
-          </div>
-        </form>
-        <button id="contact-modal-close">Cancel</button>
+        <h2 id="contact-modal-header">Contact Me</h2>
+        <div id="form-container">
+          <form action="https://formsubmit.co/benjaminwoodard93@gmail.com" method="POST">
+            <div class="contact-element">
+              <label>Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name.." required>
+            </div>
+            <div class="contact-element">
+              <label>Email</label>
+              <input type="email" id="email" name="email" placeholder="Your email.." required>
+            </div>
+            <div>
+              <label>Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Subject.." required>
+            </div>
+            <div>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Type your message here..." style="height:200px"
+                required></textarea>
+            </div>
+            <div>
+              <input class="contact-button" id="contact-modal-send" type="submit" value="Submit">
+            </div>
+            <button class="contact-button" id="contact-modal-close">Cancel</button>
+          </form>
+        </div>
       </div>
     </div>
-
+    <div class="background-overlay"></div>
   </main>
   <script src="../js/index.js"></script>
 </body>

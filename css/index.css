@@ -171,6 +171,7 @@ z-index: 2;
 
 /* Contact Modal Container */
 
+/* Modal container */
 .contact-modal-container {
   display: flex;
   align-items: center;
@@ -178,32 +179,91 @@ z-index: 2;
   height: 100%;
   width: 100%;
   position: fixed;
-  opacity:0;
+  opacity: 0;
   pointer-events: none;
   top: 0;
   bottom: 0;
   transition: opacity 0.3s ease;
+  z-index: 1000; /* Ensure it is above the overlay */
 }
 
+/* Show the modal container */
 .contact-modal-container.show {
   pointer-events: auto;
   opacity: 1;
 }
 
+/* Modal styling */
 .contact-modal {
-  background-color: red;
-  width: 100%;
-  border-radius: 5px;
-  padding: 30px 50px;
-  width:600px;
+  background-color: whitesmoke;
+  border: .25rem solid black;
+  border-radius: 1rem;
+  padding: 2rem 3rem 4rem 3rem;
+  width: 40rem;
+  height: auto;
   max-width: 100%;
   text-align: center;
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.contact-element{
-  height: 5rem;
-  width: 80%;
+/* Form container */
+#form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem; /* Even vertical spacing */
+}
+
+/* Form elements */
+#form-container input, 
+#form-container textarea, 
+#form-container button {
+  width: 100%; 
+  padding: .5rem; 
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  box-sizing: border-box; 
+}
+
+/* Contact button */
+.contact-button{
+  border: 1px solid black;
+  border-radius: 2rem;
+  height: 3rem;
+  padding: .5rem 1rem;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  letter-spacing: .2rem;
+}
+
+.contact-button:hover{
+  background-color: rgba(255, 131, 0, 1);
+}
+
+/* Background overlay for blurring */
+.background-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 999; /* Ensure it is behind the modal */
+}
+
+/* Show the overlay when modal is open */
+.contact-modal-container.show ~ .background-overlay {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* Projects Section */
