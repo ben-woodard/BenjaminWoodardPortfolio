@@ -68,19 +68,10 @@ p{
 
 /* Main page "intro" styling */
 
-.intro {
- width: 80%;
- height: auto;
- justify-content: space-between;
- position: absolute;  left: 3rem; 
- display: flex;
- flex-wrap: wrap;
-}
-
 .blurb1{
 display: flex;
 flex-wrap: wrap;
-margin-left: 20rem;
+margin-left: 17%;
 margin-top: 12rem;
 width: 40%;
 word-spacing: .5rem;
@@ -110,7 +101,7 @@ z-index: 2;
 .resume-link-container{
   width: 70%;
   margin-top: 10rem;
-  margin-left: 3rem;
+  margin-left: 5%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -329,3 +320,79 @@ z-index: 2;
   color: rgba(255, 131, 0, 1);
 }
 
+/* Screen Size adjustments */
+
+@media only screen and (max-width: 1500px){
+   .blurb1 h1{
+    line-height: 3rem;
+  }
+}
+
+@media only screen and (max-width: 1000px){
+  .resume-link-container{
+    margin: 0;
+    width: 100%;
+  }
+  #github-img{
+   display: none;
+  }
+  .blurb1{
+    margin: auto;
+  }
+
+  main{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  #recent-projects{
+    margin-top: 3rem;
+  }
+}
+
+
+@media only screen and (max-width: 800px){
+
+  .resume-link-container{
+    
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  #github-img{
+   display: none;
+  }
+  .blurb1{
+    margin: auto;
+  }
+
+  main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  #recent-projects{
+    margin-top: 3rem;
+    margin-left: 7rem;
+    width: auto;
+  }
+
+  #resume-link{ 
+    margin-top: 2rem;
+  }
+
+  .contact-modal{
+    border: none;
+  }
+  
+}
+
+@media only screen and (max-width: 580px){
+
+
+  
+}
