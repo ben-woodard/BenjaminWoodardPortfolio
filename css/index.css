@@ -260,3 +260,12 @@ z-index: 2;
   width: 50%;
 }
 
+.project-link{
+  text-decoration: none;
+  color: black;
+}
+
+.project-link:hover{
+  color: rgba(255, 131, 0, 1);
+}
+
